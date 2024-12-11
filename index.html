@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light p-auto">
+        
+            <a class="navbar-brand d-flex align-items-center p-1 mb-1" href="#">
+                <i class="bi bi-instagram"></i>
+                <span class="ml-2">Instagram</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1"
+                                data-whatever="caption" style="background-color: #5dbf24; border-color: #5dbf24;">Create a new
+                                post</button>
+                            <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1Label"
+                                aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-tittle" id="modal1Label">Create a new post</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="modal-group">
+                                                    <label for="message-text" class="col-form-label">Caption:</label>
+                                                    <textarea class="form-control" id="message-text"
+                                                        placeholder="Add the caption of ur post here"></textarea>
+                                                </div>
+                                                <button type="button" style="border: 1px solid #989997; border-radius: 5px;">
+                                                    <i class="bi bi-camera"></i>
+                                                </button>
+                                                <button type="button" style="border: 1px solid #989997; border-radius: 5px;">
+                                                    <i class="bi bi-geo-alt"></i>
+                                                </button>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary"
+                                                style="background-color: #5dbf24; border-color: #5dbf24;">Publish</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown" style="background-color: #989997; border-radius: 5px; ">
+                        <a class="nav-link dropdown-toggle text-secondary" href="#" id="navbarDropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="bi bi-gear"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Profile</a>
+                            <a class="dropdown-item" href="#">Accesibility</a>
+                            <a class="dropdown-item" href="#">Privacy and Data</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#" style="color: red;">Log out</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        
+    </nav>
+    
+    <div class="d-flex justify-content-center mt-3">
+            <button class="btn btn-link m-1" type="button">
+                <i class="bi bi-table"></i>
+            </button>
+            <button class="btn btn-link m-1" type="button">
+                <i class="bi bi-square-fill"></i>
+            </button>
+    </div>
+    
+    <div class="col d-flex justify-content-center mt-3">
+        <div class="card" style="width: 40rem;">
+            <div class="card-header">
+                <div class="container">
+                    <div class="row pt-2">
+                        <div class="col-1 align-items-left">
+                            <img src="https://media.cnn.com/api/v1/images/stellar/prod/210602230802-01-puppy-social-skills-wellness-sci.jpg?q=w_1600,h_1453,x_0,y_0,c_fill" width="40px" height="40px" style="border-radius: 20px;">
+                        </div>
+                        <div class="col-10 align-items-left pt-1">
+                            <span>This is my incredible header!</span>
+                        </div>
+                        <div class="col-1 align-items-right">
+                            <i class="bi bi-three-dots-vertical"></i>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <img class="card-image-top"
+                src="https://www.hogarmania.com/archivos/201901/tipos-de-retriever-golden-retriever-XxXx80.jpg">
+            <div class="card-body">
+                <div class="container">
+                        <div class="row mb-2 p-auto">
+                            <div class="col-1 align-items-left">
+                                <i class="bi bi-heart-fill"></i>
+                            </div>
+                            <div class="col-1 align-items-left">
+                                <i class="bi bi-share-fill"></i>
+                                
+                            </div>
+                            <div class="col-10">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col mt-1">
+                                <h5 class="card-tittle">204 Likes</h5>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col mt-1">
+                                <p class="card-text">This is an example of a very good photo that you can post on instagram</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="col d-flex justify-content-center mt-3">
+        <div class="card" style="width: 40rem;">
+            <div class="card-header">
+                <div class="container">
+                    <div class="row pt-2">
+                        <div class="col-1 align-items-left">
+                            <img src="https://media.cnn.com/api/v1/images/stellar/prod/210602230802-01-puppy-social-skills-wellness-sci.jpg?q=w_1600,h_1453,x_0,y_0,c_fill" width="40px" height="40px" style="border-radius: 20px;">
+                        </div>
+                        <div class="col-10 align-items-left pt-1">
+                            <span>This is my incredible header!</span>
+                        </div>
+                        <div class="col-1 align-items-right">
+                            <i class="bi bi-three-dots-vertical"></i>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <img class="card-image-top"
+                src="https://www.hogarmania.com/archivos/201901/tipos-de-retriever-golden-retriever-XxXx80.jpg">
+            <div class="card-body">
+                <div class="container">
+                        <div class="row mb-2 p-auto">
+                            <div class="col-1 align-items-left">
+                                <i class="bi bi-heart-fill"></i>
+                            </div>
+                            <div class="col-1 align-items-left">
+                                <i class="bi bi-share-fill"></i>
+                                
+                            </div>
+                            <div class="col-10">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col mt-1">
+                                <h5 class="card-tittle">204 Likes</h5>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col mt-1">
+                                <p class="card-text">This is an example of a very good photo that you can post on instagram</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Se que tengo que seguir mejorandolo, esto es solo lo que pidio Nef como tal de la version con la foto y usando el grid -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
