@@ -11,190 +11,235 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light p-auto">
-        
-            <a class="navbar-brand d-flex align-items-center p-1 mb-1" href="#">
-                <i class="bi bi-instagram"></i>
-                <span class="ml-2">Instagram</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-                <ul class="navbar-nav align-items-center">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1"
-                                data-whatever="caption" style="background-color: #5dbf24; border-color: #5dbf24;">Create a new
-                                post</button>
-                            <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1Label"
-                                aria-hidden="true">
-                                <div class="modal-dialog" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-tittle" id="modal1Label">Create a new post</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
+        <a class="navbar-brand d-flex align-items-center p-1 mb-1" href="#">
+            <i class="bi bi-instagram"></i>
+            <span class="ml-2">Instagram</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <ul class="navbar-nav align-items-center">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1"
+                            data-whatever="caption" style="background-color: #5dbf24; border-color: #5dbf24;">Create a
+                            new
+                            post</button>
+                        <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1Label"
+                            aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-tittle" id="modal1Label">Create a new post</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="modal-group p-1">
+                                                <label for="message-text" class="col-form-label">Caption:</label>
+                                                <textarea class="form-control" id="message-text"
+                                                    placeholder="Add the caption of ur post here"></textarea>
+                                            </div>
+                                            <button type="button" style="border: 1px solid #989997; border-radius: 5px;">
+                                                <i class="bi bi-camera"></i>
                                             </button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <form>
-                                                <div class="modal-group p-1">
-                                                    <label for="message-text" class="col-form-label">Caption:</label>
-                                                    <textarea class="form-control" id="message-text"
-                                                        placeholder="Add the caption of ur post here"></textarea>
-                                                </div>
-                                                <button type="button" style="border: 1px solid #989997; border-radius: 5px;">
-                                                    <i class="bi bi-camera"></i>
-                                                </button>
-                                                <button type="button" style="border: 1px solid #989997; border-radius: 5px;">
-                                                    <i class="bi bi-geo-alt"></i>
-                                                </button>
-                                            </form>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                            <button type="button" class="btn btn-primary"
-                                                style="background-color: #5dbf24; border-color: #5dbf24;">Publish</button>
-                                        </div>
+                                            <button type="button" style="border: 1px solid #989997; border-radius: 5px;">
+                                                <i class="bi bi-geo-alt"></i>
+                                            </button>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary"
+                                            style="background-color: #5dbf24; border-color: #5dbf24;">Publish</button>
                                     </div>
                                 </div>
                             </div>
-                        </a>
-                    </li>
-                    <li class="nav-item dropdown" style="background-color: #989997; border-radius: 5px; ">
-                        <a class="nav-link dropdown-toggle text-secondary" href="#" id="navbarDropdownMenuLink"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="bi bi-gear"></i>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right">
-                            <a class="dropdown-item" href="#">Profile</a>
-                            <a class="dropdown-item" href="#">Accesibility</a>
-                            <a class="dropdown-item" href="#">Privacy and Data</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#" style="color: red;">Log out</a>
                         </div>
-                    </li>
-                </ul>
-            </div>
-        
+                    </a>
+                </li>
+                <li class="nav-item dropdown" style="background-color: #989997; border-radius: 5px; ">
+                    <a class="nav-link dropdown-toggle text-secondary" href="#" id="navbarDropdownMenuLink"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="bi bi-gear"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="#">Profile</a>
+                        <a class="dropdown-item" href="#">Accesibility</a>
+                        <a class="dropdown-item" href="#">Privacy and Data</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#" style="color: red;">Log out</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </nav>
-    
-    <div class="d-flex justify-content-center mt-3">
-            <button class="btn btn-link m-1" type="button">
-                <i class="bi bi-table"></i>
-            </button>
-            <button class="btn btn-link m-1" type="button">
-                <i class="bi bi-square-fill"></i>
-            </button>
-    </div>
-    
-    <div class="col d-flex justify-content-center mt-3">
-        <div class="card" style="width: 40rem;">
-            <div class="card-header">
-                <div class="container">
-                    <div class="row pt-2">
-                        <div class="col-1 align-items-left">
-                            <img src="https://media.cnn.com/api/v1/images/stellar/prod/210602230802-01-puppy-social-skills-wellness-sci.jpg?q=w_1600,h_1453,x_0,y_0,c_fill" width="40px" height="40px" style="border-radius: 20px;">
-                        </div>
-                        <div class="col-10 align-items-left pt-1">
-                            <span>This is my incredible header!</span>
-                        </div>
-                        <div class="col-1 align-items-right">
-                            <i class="bi bi-three-dots-vertical"></i>
-                        </div>
-                    </div>
-                    
+    <!--Botones para el grid-->
+    <div class="container-fluid p-2">
+        <ul class="nav nav-pill justify-content-center" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+                    role="tab" aria-controls="home" aria-selected="true"><i class="bi bi-table"></i></a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab"
+                    aria-controls="profile" aria-selected="false"><i class="bi bi-square-fill"></i></a>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <!--3 imagenes por fila aqui-->
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="row">
+                    <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;"
+                            src="https://media.cnn.com/api/v1/images/stellar/prod/210602230802-01-puppy-social-skills-wellness-sci.jpg?q=w_1600,h_1453,x_0,y_0,c_fill"
+                            class="img-fluid w-100" alt=""></div>
+                    <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;"
+                            src="https://www.hogarmania.com/archivos/201901/tipos-de-retriever-golden-retriever-XxXx80.jpg"
+                            class="img-fluid w-100" alt=""></div>
+                    <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;"
+                            src="https://www.hogarmania.com/archivos/201901/tipos-de-retriever-golden-retriever-XxXx80.jpg" class="img-fluid w-100" alt=""></div>
+                </div>
+                <div class="row">
+                    <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;"
+                            src="https://cloudfront-eu-central-1.images.arcpublishing.com/diarioas/SRFEW6BFGBOV3KK5N4BPN24UJM.jpg"
+                            class="img-fluid w-100" alt=""></div>
+                    <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;"
+                            src="https://estaticos-cdn.prensaiberica.es/clip/0ac0ee2d-b804-436c-9c17-61d61dc112e1_alta-libre-aspect-ratio_default_0.jpg"
+                            class="img-fluid w-100" alt=""></div>
+                    <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;"
+                            src="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2019/02/24/15510152916640.jpg"
+                            class="img-fluid w-100" alt=""></div>
+                </div>
+                <div class="row">
+                    <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;"
+                            src="https://media.gettyimages.com/id/2187721845/es/foto/manchester-england-marcus-rashford-of-manchester-united-celebrates-scoring-his-teams-third.jpg?s=612x612&w=gi&k=20&c=VnNpE9vmW2aQiV_AjyTFAhQ34rbOz1VqDpXAmkpeH0k=" class="img-fluid w-100" alt=""></div>
+                    <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;"
+                            src="https://s.libertaddigital.com/2024/12/26/1920/1080/fit/europapress-5856206-30-march-2024-united-kingdom-london-chelseas-cole-palmer-celebrates-scoring-2.jpg" class="img-fluid w-100" alt=""></div>
+                    <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;"
+                            src="https://images2.minutemediacdn.com/image/upload/c_crop,w_1022,h_681,x_0,y_0/c_fill,w_720,ar_3:2,f_auto,q_auto,g_auto/images/GettyImages/mmsport/90min_es_international_web/01j7r2w6tt6kwxk608f8.jpg"
+                            class="img-fluid w-100" alt=""></div>
                 </div>
             </div>
-            <img class="card-image-top"
-                src="https://www.hogarmania.com/archivos/201901/tipos-de-retriever-golden-retriever-XxXx80.jpg">
-            <div class="card-body">
-                <div class="container">
-                        <div class="row mb-2 p-auto">
-                            <div class="col-1 align-items-left">
-                                <i class="bi bi-heart-fill"></i>
-                            </div>
-                            <div class="col-1 align-items-left">
-                                <i class="bi bi-share-fill"></i>
-                                
-                            </div>
-                            <div class="col-10">
+    
+            <!--Cada imagen en su postcard como en instagram feed-->
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <div class="col d-flex justify-content-center mt-3">
+                    <div class="card" style="width: 40rem;">
+                        <div class="card-header">
+                            <div class="container">
+                                <div class="row pt-2">
+                                    <div class="col-1 align-items-left">
+                                        <img src="https://media.cnn.com/api/v1/images/stellar/prod/210602230802-01-puppy-social-skills-wellness-sci.jpg?q=w_1600,h_1453,x_0,y_0,c_fill"
+                                            width="40px" height="40px" style="border-radius: 20px;">
+                                    </div>
+                                    <div class="col-10 align-items-left pt-1">
+                                        <span>This is my incredible header!</span>
+                                    </div>
+                                    <div class="col-1 align-items-right">
+                                        <i class="bi bi-three-dots-vertical"></i>
+                                    </div>
+                                </div>
+    
                             </div>
                         </div>
-
-                        <div class="row">
-                            <div class="col mt-1">
-                                <h5 class="card-tittle">204 Likes</h5>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col mt-1">
-                                <p class="card-text">This is an example of a very good photo that you can post on instagram</p>
+                        <img class="card-image-top"
+                            src="https://www.hogarmania.com/archivos/201901/tipos-de-retriever-golden-retriever-XxXx80.jpg">
+                        <div class="card-body">
+                            <div class="container">
+                                <div class="row mb-2 p-auto">
+                                    <div class="col-1 align-items-left">
+                                        <i class="bi bi-heart-fill"></i>
+                                    </div>
+                                    <div class="col-1 align-items-left">
+                                        <i class="bi bi-share-fill"></i>
+    
+                                    </div>
+                                    <div class="col-10">
+                                    </div>
+                                </div>
+    
+                                <div class="row">
+                                    <div class="col mt-1">
+                                        <h5 class="card-tittle">204 Likes</h5>
+                                    </div>
+                                </div>
+    
+                                <div class="row">
+                                    <div class="col mt-1">
+                                        <p class="card-text">This is an example of a very good photo that you can post
+                                            on instagram</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-            </div>
-        </div>
-    </div>
-    <div class="col d-flex justify-content-center mt-3">
-        <div class="card" style="width: 40rem;">
-            <div class="card-header">
-                <div class="container">
-                    <div class="row pt-2">
-                        <div class="col-1 align-items-left">
-                            <img src="https://media.cnn.com/api/v1/images/stellar/prod/210602230802-01-puppy-social-skills-wellness-sci.jpg?q=w_1600,h_1453,x_0,y_0,c_fill" width="40px" height="40px" style="border-radius: 20px;">
+                </div>
+                <div class="col d-flex justify-content-center mt-3">
+                    <div class="card" style="width: 40rem;">
+                        <div class="card-header">
+                            <div class="container">
+                                <div class="row pt-2">
+                                    <div class="col-1 align-items-left">
+                                        <img src="https://media.cnn.com/api/v1/images/stellar/prod/210602230802-01-puppy-social-skills-wellness-sci.jpg?q=w_1600,h_1453,x_0,y_0,c_fill"
+                                            width="40px" height="40px" style="border-radius: 20px;">
+                                    </div>
+                                    <div class="col-10 align-items-left pt-1">
+                                        <span>This is my incredible header!</span>
+                                    </div>
+                                    <div class="col-1 align-items-right">
+                                        <i class="bi bi-three-dots-vertical"></i>
+                                    </div>
+                                </div>
+    
+                            </div>
                         </div>
-                        <div class="col-10 align-items-left pt-1">
-                            <span>This is my incredible header!</span>
-                        </div>
-                        <div class="col-1 align-items-right">
-                            <i class="bi bi-three-dots-vertical"></i>
+                        <img class="card-image-top"
+                            src="https://www.hogarmania.com/archivos/201901/tipos-de-retriever-golden-retriever-XxXx80.jpg">
+                        <div class="card-body">
+                            <div class="container">
+                                <div class="row mb-2 p-auto">
+                                    <div class="col-1 align-items-left">
+                                        <i class="bi bi-heart-fill"></i>
+                                    </div>
+                                    <div class="col-1 align-items-left">
+                                        <i class="bi bi-share-fill"></i>
+    
+                                    </div>
+                                    <div class="col-10">
+                                    </div>
+                                </div>
+    
+                                <div class="row">
+                                    <div class="col mt-1">
+                                        <h5 class="card-tittle">204 Likes</h5>
+                                    </div>
+                                </div>
+    
+                                <div class="row">
+                                    <div class="col mt-1">
+                                        <p class="card-text">This is an example of a very good photo that you can post
+                                            on instagram</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    
                 </div>
             </div>
-            <img class="card-image-top"
-                src="https://www.hogarmania.com/archivos/201901/tipos-de-retriever-golden-retriever-XxXx80.jpg">
-            <div class="card-body">
-                <div class="container">
-                        <div class="row mb-2 p-auto">
-                            <div class="col-1 align-items-left">
-                                <i class="bi bi-heart-fill"></i>
-                            </div>
-                            <div class="col-1 align-items-left">
-                                <i class="bi bi-share-fill"></i>
-                                
-                            </div>
-                            <div class="col-10">
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col mt-1">
-                                <h5 class="card-tittle">204 Likes</h5>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col mt-1">
-                                <p class="card-text">This is an example of a very good photo that you can post on instagram</p>
-                            </div>
-                        </div>
-                    </div>
-            </div>
+    
         </div>
     </div>
-
 
 
     <!-- Se que tengo que seguir mejorandolo, esto es solo lo que pidio Nef como tal de la version con la foto y usando el grid -->
@@ -208,6 +253,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    
 </body>
 
 </html>
